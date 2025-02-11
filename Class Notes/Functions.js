@@ -14,7 +14,13 @@ function helloAgain(name){
 helloAgain("Dawson");
 
 function addition(a, b){
-document.write("addition result is " + (a + b));
-document.write("<br> 🚶 End of Code function 2 🚶");
+	let result = a + b;
+	return result;
 }
-addition(3,4);
+
+document.write(addition(3,4));
+
+// back ticks allow this to happen, double quotes give an error
+let v = `<br>I think I like Java more`;
+
+document.write(v);
