@@ -37,3 +37,17 @@ for(var i = 0; i < 3; i++){
   
   setTimeout(log, 100);
 }
+
+function counter2(){
+  let count = 0;
+
+  return function(){
+    count++;
+    document.write(count);
+  }
+}
+
+const newvar = counter();
+
+newvar();
+newvar();
